@@ -55,12 +55,15 @@ function quiz(question, answer){
   var inputAnswer=readlineSync.question(chalk.blue(question));
   if(inputAnswer.toLowerCase()===answer.toLowerCase()){
     console.log(boldye("Sahi Jawab "));
-    console.log(chalk.red("-------------------------"))
     score++;
+    console.log(chalk.yellow(score));
+    console.log(chalk.red("-------------------------"))
+    
   }
   else{
     console.log(boldre("Oops Galat Jawab ")+ boldye("Correct Answer is "),
     chalk.green(answer));
+    console.log(chalk.yellow(score));
     console.log(chalk.red("-------------------------"))
   }
 
