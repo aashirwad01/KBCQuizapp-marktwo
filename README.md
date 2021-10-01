@@ -17,7 +17,7 @@ A quiz App based on KBC using Command Line . See if you become a Crorepati.
   - chalk
   - require
   - loops
-  - event.target.value
+
   
  
  
